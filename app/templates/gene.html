@@ -1,6 +1,6 @@
-<div ng-controller="GeneCtrl">
-  <h2>{{ title | titlize }}<a href="#">Click here to view in jBrowse</a></h2>
-  <table class="gene-data">
+<div class="gene-view" ng-controller="GeneCtrl">
+  <h2>{{ title | titlize }}<button ng-click="showBrowse()">{{ browse ? "Go back" : "View in jBrowse"}}</button></h2>
+  <table class="gene-data" ng-hide="browse">
     <thead>
       <tr>
         <th>Start</th>
@@ -20,5 +20,7 @@
       </tr>
     </tbody>
   </table>
-  <!-- <iframe src="http://localhost" frameborder="0"></iframe> -->
+  <div class="browse" ng-show="browse">
+    <iframe ng-src="{{ path }}" frameborder="0"></iframe>
+  </div>
 </div>

@@ -47,16 +47,27 @@ app.factory('GeneService', function($q, $http) {
   };
 });
 
-app.controller('GeneCtrl', function($scope, $routeParams) {
-  $scope.id = $routeParams.id;
-  $scope.data = $routeParams.id;
+app.factory('LinkService', function() {
+  var base, query;
+  base = 'jbrowse/index.html?data=sample_data/json/';
+  query = '&nav=0&tracks=DNA%2CGene%2COperon&highlight=';
+  return {
+    linkify: function(slug) {
+      return base + slug + query;
+    }
+  };
 });
 
-app.controller('GeneCtrl', function($scope, $routeParams, GeneService) {
+app.controller('GeneCtrl', function($scope, $routeParams, GeneService, LinkService) {
   $scope.title = $routeParams.slug;
+  $scope.path = LinkService.linkify($routeParams.slug);
   GeneService.genes($routeParams.slug).then(function(data) {
     return $scope.data = data;
   });
+  $scope.browse = false;
+  $scope.showBrowse = function() {
+    return $scope.browse = !$scope.browse;
+  };
 });
 
 app.controller('HomeCtrl', function($scope, $http) {

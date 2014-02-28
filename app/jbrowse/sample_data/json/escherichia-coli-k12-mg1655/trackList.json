@@ -1,0 +1,38 @@
+{
+   "formatVersion" : 1,
+   "tracks" : [
+      {
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "chunkSize" : 20000,
+         "label" : "DNA",
+         "key" : "Reference sequence",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "category" : "Reference sequence",
+         "type" : "SequenceTrack"
+      },
+      {
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/Gene/NC_000913.3/trackData.json",
+         "trackType" : null,
+         "compress" : 0,
+         "key" : "Gene",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "label" : "Gene",
+         "style" : {
+            "className" : "feature"
+         }
+      },
+      {
+         "key" : "Operon",
+         "compress" : 0,
+         "label" : "Operon",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "type" : "FeatureTrack",
+         "trackType" : null,
+         "urlTemplate" : "tracks/Operon/NC_000913.3/trackData.json",
+         "style" : {
+            "className" : "feature"
+         }
+      }
+   ]
+}
