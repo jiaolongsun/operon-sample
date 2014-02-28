@@ -1,0 +1,6 @@
+<div class="gene-list">
+  <input type="text" ng-model="name" placeholder="Search gene here">
+  <ul class="genes">
+    <li ng-repeat="gene in genes | filter:name"><a href="#/gene/{{gene.slug}}">{{gene.name}}</a></li>
+  </ul>
+</div>

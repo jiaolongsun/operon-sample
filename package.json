@@ -1,0 +1,19 @@
+{
+  "name": "jb",
+  "version": "0.0.0",
+  "description": "Kashish Project",
+  "main": "gulpfile.js",
+  "author": "whoisandie",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "~3.5.2",
+    "gulp-sass": "~0.7.1",
+    "gulp-connect": "~1.0.5",
+    "gulp-concat": "~2.1.7",
+    "gulp-ngmin": "~0.1.2"
+  },
+  "devDependencies": {
+    "gulp-coffee": "~1.4.1",
+    "gulp-load-tasks": "~0.1.1"
+  }
+}

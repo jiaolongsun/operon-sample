@@ -1,0 +1,24 @@
+<div ng-controller="GeneCtrl">
+  <h2>{{ title | titlize }}<a href="#">Click here to view in jBrowse</a></h2>
+  <table class="gene-data">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Strand</th>
+        <th>Number of genes</th>
+        <th>Genes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in data">
+        <td width="20%" ng-bind="item.start"></td>
+        <td width="20%" ng-bind="item.stop"></td>
+        <td width="20%" ng-bind="item.strand"></td>
+        <td width="20%" ng-bind="item.number"></td>
+        <td width="20%" ng-bind="item.list"></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <iframe src="http://localhost" frameborder="0"></iframe> -->
+</div>
