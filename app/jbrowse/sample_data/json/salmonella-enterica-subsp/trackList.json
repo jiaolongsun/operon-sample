@@ -1,0 +1,134 @@
+{
+   "formatVersion" : 1,
+   "tracks" : [
+      {
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "key" : "Reference sequence",
+         "type" : "SequenceTrack",
+         "chunkSize" : 20000,
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "label" : "DNA",
+         "category" : "Reference sequence"
+      },
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "type" : "FeatureTrack",
+         "trackType" : null,
+         "compress" : 0,
+         "key" : "Gene",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/Gene/NC_016856.1/trackData.json",
+         "label" : "Gene"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "Operons",
+         "label" : "Operons",
+         "urlTemplate" : "tracks/Operons/NC_016856.1/trackData.json",
+         "style" : {
+            "className" : "feature"
+         },
+         "type" : "FeatureTrack",
+         "trackType" : null,
+         "compress" : 0
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "ERX321086",
+         "label" : "ERX321086",
+         "urlTemplate" : "tracks/ERX321086/ERX321086/trackData.json",
+         "trackType" : null,
+         "compress" : 0,
+         "style" : {
+            "className" : "feature"
+         },
+         "type" : "FeatureTrack"
+      },
+      {
+         "label" : "ERX321085",
+         "urlTemplate" : "tracks/ERX321085/ERX321085/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "ERX321085",
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "trackType" : null
+      },
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "type" : "FeatureTrack",
+         "trackType" : null,
+         "compress" : 0,
+         "key" : "ERX321084",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "label" : "ERX321084",
+         "urlTemplate" : "tracks/ERX321084/ERX321084/trackData.json"
+      },
+      {
+         "urlTemplate" : "tracks/ERX321083/ERX321083/trackData.json",
+         "label" : "ERX321083",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "ERX321083",
+         "compress" : 0,
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         }
+      },
+      {
+         "label" : "ERX321082",
+         "urlTemplate" : "tracks/ERX321082/ERX321082/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "ERX321082",
+         "compress" : 0,
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         }
+      },
+      {
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "trackType" : null,
+         "label" : "ERX321081",
+         "urlTemplate" : "tracks/ERX321081/ERX321081/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "ERX321081"
+      },
+      {
+         "label" : "ERX321080",
+         "urlTemplate" : "tracks/ERX321080/ERX321080/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "ERX321080",
+         "compress" : 0,
+         "trackType" : null,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         }
+      },
+      {
+         "urlTemplate" : "tracks/ERX321079/ERX321079/trackData.json",
+         "label" : "ERX321079",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "ERX321079",
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "trackType" : null
+      }
+   ]
+}

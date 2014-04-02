@@ -1,0 +1,254 @@
+{
+   "tracks" : [
+      {
+         "type" : "SequenceTrack",
+         "label" : "DNA",
+         "chunkSize" : 20000,
+         "category" : "Reference sequence",
+         "key" : "Reference sequence",
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-"
+      },
+      {
+         "key" : "Gene",
+         "urlTemplate" : "tracks/Gene/NC_020528.1/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "Gene"
+      },
+      {
+         "key" : "Operons",
+         "urlTemplate" : "tracks/Operons/NC_020528.1/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "Operons"
+      },
+      {
+         "label" : "SRX233590",
+         "style" : {
+            "className" : "feature"
+         },
+         "type" : "FeatureTrack",
+         "compress" : 0,
+         "trackType" : null,
+         "key" : "SRX233590",
+         "urlTemplate" : "tracks/SRX233590/SRX233590/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList"
+      },
+      {
+         "label" : "SRX233589",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233589/SRX233589/trackData.json",
+         "key" : "SRX233589",
+         "trackType" : null
+      },
+      {
+         "urlTemplate" : "tracks/SRX233588/SRX233588/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "SRX233588",
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233588"
+      },
+      {
+         "trackType" : null,
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233587/SRX233587/trackData.json",
+         "key" : "SRX233587",
+         "type" : "FeatureTrack",
+         "compress" : 0,
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233587"
+      },
+      {
+         "type" : "FeatureTrack",
+         "compress" : 0,
+         "trackType" : null,
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233586/SRX233586/trackData.json",
+         "key" : "SRX233586",
+         "label" : "SRX233586",
+         "style" : {
+            "className" : "feature"
+         }
+      },
+      {
+         "key" : "SRX233585",
+         "urlTemplate" : "tracks/SRX233585/SRX233585/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233585"
+      },
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233584",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233584/SRX233584/trackData.json",
+         "key" : "SRX233584",
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack"
+      },
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233583",
+         "trackType" : null,
+         "urlTemplate" : "tracks/SRX233583/SRX233583/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "SRX233583",
+         "type" : "FeatureTrack",
+         "compress" : 0
+      },
+      {
+         "label" : "SRX233582",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "key" : "SRX233582",
+         "urlTemplate" : "tracks/SRX233582/SRX233582/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null
+      },
+      {
+         "label" : "SRX233581",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233581/SRX233581/trackData.json",
+         "key" : "SRX233581",
+         "trackType" : null
+      },
+      {
+         "label" : "SRX233580",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233580/SRX233580/trackData.json",
+         "key" : "SRX233580",
+         "trackType" : null
+      },
+      {
+         "type" : "FeatureTrack",
+         "compress" : 0,
+         "trackType" : null,
+         "urlTemplate" : "tracks/SRX233579/SRX233579/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "SRX233579",
+         "label" : "SRX233579",
+         "style" : {
+            "className" : "feature"
+         }
+      },
+      {
+         "label" : "SRX233578",
+         "style" : {
+            "className" : "feature"
+         },
+         "type" : "FeatureTrack",
+         "compress" : 0,
+         "trackType" : null,
+         "urlTemplate" : "tracks/SRX233578/SRX233578/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "SRX233578"
+      },
+      {
+         "key" : "SRX233577",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233577/SRX233577/trackData.json",
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233577"
+      },
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233576",
+         "key" : "SRX233576",
+         "urlTemplate" : "tracks/SRX233576/SRX233576/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack"
+      },
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "label" : "SRX233575",
+         "trackType" : null,
+         "urlTemplate" : "tracks/SRX233575/SRX233575/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "SRX233575",
+         "type" : "FeatureTrack",
+         "compress" : 0
+      },
+      {
+         "label" : "SRX233574",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/SRX233574/SRX233574/trackData.json",
+         "key" : "SRX233574",
+         "trackType" : null
+      },
+      {
+         "label" : "SRX233573",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "urlTemplate" : "tracks/SRX233573/SRX233573/trackData.json",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "SRX233573",
+         "trackType" : null
+      }
+   ],
+   "formatVersion" : 1
+}

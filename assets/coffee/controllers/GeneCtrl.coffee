@@ -9,5 +9,6 @@ app.controller 'GeneCtrl', ($scope, $routeParams, GeneService, LinkService)->
 
   $scope.showBrowse = ()->
     $scope.browse = !$scope.browse
+    # console.log $scope.path
 
   return
