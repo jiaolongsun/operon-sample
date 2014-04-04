@@ -1,26 +1,35 @@
 <div class="gene-view" ng-controller="GeneCtrl">
-  <h2>{{ title | titlize }}<button ng-click="showBrowse()">{{ browse ? "Go back" : "View in jBrowse"}}</button></h2>
-  <table class="gene-data" ng-hide="browse">
-    <thead>
-      <tr>
-        <th>Start</th>
-        <th>Stop</th>
-        <th>Strand</th>
-        <th>Number of genes</th>
-        <th>Genes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="item in data">
-        <td width="20%" ng-bind="item.start"></td>
-        <td width="20%" ng-bind="item.stop"></td>
-        <td width="20%" ng-bind="item.strand"></td>
-        <td width="20%" ng-bind="item.number"></td>
-        <td width="20%" ng-bind="item.list"></td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="browse" ng-show="browse">
-    <iframe ng-src="{{ path }}" frameborder="0"></iframe>
+  <h2>{{ title | titlize }}<button class="button" ng-show="browse || table" ng-click="goBack()">Go Back</button></h2>
+  <p class="fader" ng-show="loading">loading data...</p>
+  <div class="gene-info fader" ng-hide="loading">
+    <div class="information" ng-show="subview">
+      <p ng-bind-html="info"></p>
+      <button class="button" ng-click="showBrowse()">View in jBrowse</button>
+      <button class="button" ng-click="showTable()">Show Operon Table</button>
+      <a class="button" download="{{title + '.json'}}" href="{{url}}">Download Operon Table</a>
+    </div>
+    <table class="gene-data" ng-show="table">
+      <thead>
+        <tr>
+          <th>Start</th>
+          <th>Stop</th>
+          <th>Strand</th>
+          <th>Number of genes</th>
+          <th>Genes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in items">
+          <td width="20%" ng-bind="item.start"></td>
+          <td width="20%" ng-bind="item.stop"></td>
+          <td width="20%" ng-bind="item.strand"></td>
+          <td width="20%" ng-bind="item.number"></td>
+          <td width="20%" ng-bind="item.list"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="browse" ng-show="browse">
+      <iframe ng-src="{{ path }}" frameborder="0"></iframe>
+    </div>
   </div>
 </div>
