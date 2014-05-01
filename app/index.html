@@ -21,7 +21,23 @@
             <div class="header">
                 <h1><a href="#/">Operon Prediction for Bacterial Genomes DB</a></h1>
             </div>
-            <section class="sidebar"></section>
+            <section class="sidebar" ng-controller="SidebarCtrl">
+                <div class="gene-list">
+                  <label for="orgn">Select organism</label>
+                  <select name="orgn" id="orgn" ng-model="orgn" ng-options="gene.name for gene in genes" ng-change="locate(orgn.slug)"></select>
+                  <ul class="links">
+                    <li>
+                      <a href="#/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#/tutorial">View Tutorial</a>
+                    </li>
+                    <li>
+                        <a href="#/contact">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+            </section>
             <section class="content ng-cloak">
                 <div class="fs content-inner ng-view"></div>
             </section>

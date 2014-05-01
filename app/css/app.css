@@ -101,6 +101,11 @@ a {
   box-shadow: none; }
   .gene-list input[type="text"], .gene-list input[type="text"]:focus {
     outline: none; }
+.gene-list select {
+  width: 100%;
+  margin-top: 10px; }
+.gene-list ul {
+  margin-top: 20px; }
 
 .gene-data {
   width: 100% !important;
@@ -136,7 +141,6 @@ a {
   background: #44697d;
   border: none;
   border-radius: 2px;
-  float: none;
   font-size: 14px;
   color: #ffffff;
   -webkit-transition: background cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s;
@@ -163,8 +167,8 @@ a {
     border: 1px #c9c9c9 solid; }
 
 .fs.ng-enter, .fs.ng-leave {
-  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
-  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s;
   display: block;
   width: 100%;
   position: absolute;
@@ -181,16 +185,3 @@ a {
 
 .fs.ng-leave.ng-leave-active {
   opacity: 0; }
-
-.fader {
-  -webkit-transition: 0.5s linear all;
-  transition: 0.5s linear all;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  opacity: 1; }
-
-.fader.ng-hide {
-  opacity: 0; }
-
-.fader.ng-hide-add, .fader.ng-hide-remove {
-  display: block !important; }
