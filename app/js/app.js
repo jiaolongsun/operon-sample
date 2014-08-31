@@ -8,18 +8,18 @@ app.config(function($compileProvider) {
 
 app.config(function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: '/templates/home.html',
+    templateUrl: 'templates/home.html',
     controller: 'HomeCtrl'
   });
   $routeProvider.when('/gene/:slug', {
-    templateUrl: '/templates/gene.html',
+    templateUrl: 'templates/gene.html',
     controller: 'GeneCtrl'
   });
   $routeProvider.when('/tutorial', {
-    templateUrl: '/templates/tutorial.html'
+    templateUrl: 'templates/tutorial.html'
   });
   $routeProvider.when('/contact', {
-    templateUrl: '/templates/contact.html'
+    templateUrl: 'templates/contact.html'
   });
   $routeProvider.otherwise({
     redirectTo: '/'
