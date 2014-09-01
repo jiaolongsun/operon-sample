@@ -1,22 +1,23 @@
   [{
-    "name": "Escherichia Coli K12 MG1655",
-    "slug": "escherichia-coli-k12-mg1655"
-  },
-  {
-    "name": "Eggerthella Lenta DSM2243",
-    "slug": "eggerthella-lenta-dsm2243"
-  },
-  {
-    "name": "Campylobacter Jejuni RM1221",
-    "slug": "campylobacter-jejuni-rm1221"
-  },
-  {
     "name": "Clostridium Beijerincki 2243",
     "slug": "clostridium-beijerincki-2243"
   },
   {
     "name": "Clostridium Difficile 630",
     "slug": "clostridium-difficile-630"
+  },
+  {
+    "name": "Campylobacter Jejuni RM1221",
+    "slug": "campylobacter-jejuni-rm1221"
+  },
+  
+  {
+    "name": "Escherichia Coli K12 MG1655",
+    "slug": "escherichia-coli-k12-mg1655"
+  },
+  {
+    "name": "Eggerthella Lenta DSM2243",
+    "slug": "eggerthella-lenta-dsm2243"
   },
   {
     "name": "Mycobacterium tuberculosis H37Rv",
