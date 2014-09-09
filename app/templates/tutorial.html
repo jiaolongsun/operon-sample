@@ -1,5 +1,29 @@
 <div class="tutorial information">
 	<h2>Tutorial</h2>
-	<p>For our database we have used RNA-seq datasets for 9 organisms and predicted operons using Rockhopper. It shows different organisms user can select from the drop-down list and it will display the screen for that particular bacterial genome. It shows, there are three options available for users, as they can view the table of operons predicted, download the table for operons and view operons using jBrowse. If you click on the option with view in jBrowse it will take the user to jBrowse using that user can view reference sequence, gene list for the particular bacterial genome and operon list predicted. User can also select the operon data for different conditions from which RNA-seq datasets have been taken on the basis of their SRA ids. Using SRA id user can look for the particular condition of each bacterial genome in SRA database from NCBI.</p>
-	<p>Now from the jBrowse, if the user have selected any particular operon, it will provide the information regarding the position of that particular operon, it’s length in bp and its attributes such as Id, names of the genes associated, sequence id, source and region sequence in FASTA format. And if the user select any gene, it will provide the information regarding the primary data which is name of gene, position, length and for the other attributes it will provide the information regarding Dbxref, Gbkey, id of gene, locus, Seq_id, source and the region sequence for that particular gene in FASTA format. The interface was developed using HTML, CSS and JavaScript.</p>
+	<p>We developed an interface using HTML, CSS, JavaScript and also incorporated jBrowse, a genome viewer to display different tracks for building operomeDB. User interface of our database allows the selection of an organism using a drop-down list. User can select an organism and selected bacterial genome information is displayed. There are multiple view options available for users, like viewing as a table of predicted operons, viewing operons using jBrowse or to download the predicted operons as a table. Clicking on the tab with the option of ‘view in jBrowse’, will display data in jBrowse and user can view reference sequence of the genome, gene list in the particular bacterial genome and a list of operons predicted. User can also select to show the operon data for different conditions from which RNA-seq datasets have been taken, with reference to their SRA IDs.</p>
+	<p>Here, we provide an example illustrating the functionality of operomeDB.</p>
+	<ol>
+		<li>
+			A user can go to the main page of our Graphical User Interface (GUI), click on ‘Select Organism’ and then it will provide the list of the entire bacterial organisms present in the database. For instance, selecting the query genome as Escherichia coli K12 MG1655 will display the page showing the operon predictions in various formats for E. coli.
+			<img src="img/figure-1.jpg" alt="figure-1" />
+		</li>
+		<li>
+			On the query result page, it will display the information regarding E. coli and other possible options available. By clicking on the link ‘View in jBrowse’ will enable the user to navigate the data via genome browser through different tracks.
+		</li>
+		<li>
+			In genome browser on the left panel user can select any number of available tracks and selected tracks will be displayed in the browser window. The user can now go through each track and query different operons predicted in our database.
+			<img src="img/figure-2.jpg" alt="figure-2" />
+		</li>
+		<li>
+			Using the download button user can download the fasta sequence file for a particular operon.
+			<img src="img/figure-3.jpg" alt="figure-3" />
+		</li>
+		<li>
+			By selecting ‘file’ option in upper panel, users can also upload/add their own sequence or dataset for visualization or comparison in the genome browser.
+		</li>
+		<li>
+			User can also look for predicted operons in each bacterial organism marked as ‘NA’. These are the operons that are newly predicted in our study compared to the DOOR operon database.
+			<img src="img/figure-4.jpg" alt="figure-4" />
+		</li>
+	</ol>
 </div>
