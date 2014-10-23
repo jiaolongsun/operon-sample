@@ -151,7 +151,19 @@
             "className" : "feature"
          },
          "trackType" : null,
-         "urlTemplate" : "tracks/SRX186553/SRX186553s/trackData.json",
+         "urlTemplate" : "tracks/SRX186553/SRX186553/trackData.json",
+         "type" : "FeatureTrack"
+      },
+      {
+         "compress" : 0,
+         "key" : "DOOR_predictions",
+         "label" : "DOOR_predictions",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "style" : {
+            "className" : "feature"
+         },
+         "trackType" : null,
+         "urlTemplate" : "tracks/DOOR_predictions/DOOR_predictions/trackData.json",
          "type" : "FeatureTrack"
       }
    ]

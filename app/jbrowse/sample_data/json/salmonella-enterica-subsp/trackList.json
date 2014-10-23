@@ -129,6 +129,18 @@
          },
          "compress" : 0,
          "trackType" : null
+      },
+      {
+         "urlTemplate" : "tracks/DOOR_predictions/DOOR_predictions/trackData.json",
+         "label" : "DOOR_predictions",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "DOOR_predictions",
+         "type" : "FeatureTrack",
+         "style" : {
+            "className" : "feature"
+         },
+         "compress" : 0,
+         "trackType" : null
       }
    ]
 }

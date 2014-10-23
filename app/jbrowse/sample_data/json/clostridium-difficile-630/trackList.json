@@ -249,6 +249,18 @@
          },
          "urlTemplate" : "tracks/SRX264341/SRX264341/trackData.json",
          "type" : "FeatureTrack"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "DOOR_predictions",
+         "label" : "DOOR_predictions",
+         "compress" : 0,
+         "trackType" : null,
+         "style" : {
+            "className" : "feature"
+         },
+         "urlTemplate" : "tracks/DOOR_predictions/DOOR_predictions/trackData.json",
+         "type" : "FeatureTrack"
       }
    ]
 }

@@ -236,6 +236,18 @@
          "style" : {
             "className" : "feature"
          }
+      },
+      {
+         "trackType" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "urlTemplate" : "tracks/DOOR_predictions/DOOR_predictions/trackData.json",
+         "label" : "DOOR_predictions",
+         "key" : "DOOR_predictions",
+         "style" : {
+            "className" : "feature"
+         }
       }
    ],
    "formatVersion" : 1

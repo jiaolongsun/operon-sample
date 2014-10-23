@@ -2,8 +2,8 @@ app.controller 'SidebarCtrl', ($scope, $location)->
     $scope.genes = [
       
       {
-        "name": "Clostridium Beijerincki 2243"
-        "slug": "clostridium-beijerincki-2243"
+        "name": "Clostridium Beijerincki NCIMB 8052"
+        "slug": "clostridium-beijerincki-NCIMB-8052"
       },
       {
         "name": "Clostridium Difficile 630"

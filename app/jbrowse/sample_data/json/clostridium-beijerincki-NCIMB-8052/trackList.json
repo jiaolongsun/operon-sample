@@ -105,6 +105,18 @@
          "trackType" : null,
          "label" : "SRX096493",
          "type" : "FeatureTrack"
+      },
+      {
+         "compress" : 0,
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "key" : "DOOR_predictions",
+         "urlTemplate" : "tracks/DOOR_predictions/DOOR_predictions/trackData.json",
+         "style" : {
+            "className" : "feature"
+         },
+         "trackType" : null,
+         "label" : "DOOR_predictions",
+         "type" : "FeatureTrack"
       }
    ]
 }

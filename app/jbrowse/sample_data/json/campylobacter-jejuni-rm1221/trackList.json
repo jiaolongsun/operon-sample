@@ -225,6 +225,18 @@
          "trackType" : null,
          "key" : "SRX155618",
          "type" : "FeatureTrack"
+      },
+      {
+         "compress" : 0,
+         "urlTemplate" : "tracks/DOOR_predictions/DOOR_predictions/trackData.json",
+         "label" : "DOOR_predictions",
+         "style" : {
+            "className" : "feature"
+         },
+         "storeClass" : "JBrowse/Store/SeqFeature/NCList",
+         "trackType" : null,
+         "key" : "DOOR_predictions",
+         "type" : "FeatureTrack"
       }
    ]
 }
