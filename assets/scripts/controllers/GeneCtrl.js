@@ -1,4 +1,4 @@
-app.controller('GeneCtrl', function($scope, $sce, $routeParams, GeneService, LinkService) {
+app.controller('GeneCtrl', function($scope, $sce, $document, $routeParams, GeneService, LinkService) {
   $scope.title = $routeParams.slug;
   $scope.path = LinkService.linkify($routeParams.slug);
   $scope.loading = true;
@@ -12,8 +12,11 @@ app.controller('GeneCtrl', function($scope, $sce, $routeParams, GeneService, Lin
     $scope.url = URL.createObjectURL($scope.getBlob($scope.items));
   });
   $scope.showBrowse = function() {
+    var ifr;
+    ifr = $document.find('iframe');
     $scope.browse = !$scope.browse;
     $scope.subview = !$scope.subview;
+    ifr.attr('src', ifr.attr('src'));
   };
   $scope.showTable = function() {
     $scope.table = !$scope.table;

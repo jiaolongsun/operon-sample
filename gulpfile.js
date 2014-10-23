@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    tasks = require('gulp-load-tasks')();
+    tasks = require('gulp-load-plugins')(gulp);
 
 var paths = {
   html: 'app/*.html',
@@ -20,7 +20,7 @@ var paths = {
       'assets/scripts/directives/*.js'
     ]
   }
-}
+};
 
 gulp.task('connect', tasks.connect.server({
   port: 3000,
@@ -73,4 +73,4 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['connect', 'concat', 'watch']);
-gulp.task('build', ['sass', 'concat']);
+gulp.task('build', ['scss', 'concat']);

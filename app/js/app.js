@@ -26,6 +26,12 @@ app.config(function($routeProvider) {
   });
 });
 
+app.filter('resource', function($sce) {
+  return function(input) {
+    return $sce.trustAsResourceUrl(input);
+  };
+});
+
 app.filter('titlize', function() {
   return function(input) {
     var word;
@@ -68,7 +74,7 @@ app.factory('LinkService', function() {
   };
 });
 
-app.controller('GeneCtrl', function($scope, $sce, $routeParams, GeneService, LinkService) {
+app.controller('GeneCtrl', function($scope, $sce, $document, $routeParams, GeneService, LinkService) {
   $scope.title = $routeParams.slug;
   $scope.path = LinkService.linkify($routeParams.slug);
   $scope.loading = true;
@@ -82,8 +88,11 @@ app.controller('GeneCtrl', function($scope, $sce, $routeParams, GeneService, Lin
     $scope.url = URL.createObjectURL($scope.getBlob($scope.items));
   });
   $scope.showBrowse = function() {
+    var ifr;
+    ifr = $document.find('iframe');
     $scope.browse = !$scope.browse;
     $scope.subview = !$scope.subview;
+    ifr.attr('src', ifr.attr('src'));
   };
   $scope.showTable = function() {
     $scope.table = !$scope.table;
@@ -104,7 +113,7 @@ app.controller('GeneCtrl', function($scope, $sce, $routeParams, GeneService, Lin
 });
 
 app.controller('HomeCtrl', function($scope, $http) {
-  return $scope.message = 'Welcome';
+  $scope.message = 'Welcome';
 });
 
 app.controller('SidebarCtrl', function($scope, $location) {

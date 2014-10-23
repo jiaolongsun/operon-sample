@@ -1,3 +1,3 @@
 app.controller('HomeCtrl', function($scope, $http) {
-  return $scope.message = 'Welcome';
+  $scope.message = 'Welcome';
 });

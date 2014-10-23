@@ -1,4 +1,4 @@
-app.controller 'GeneCtrl', ($scope, $sce, $routeParams, GeneService, LinkService)->
+app.controller 'GeneCtrl', ($scope, $sce, $document, $routeParams, GeneService, LinkService)->
 
   $scope.title = $routeParams.slug
   $scope.path = LinkService.linkify($routeParams.slug)
@@ -15,8 +15,10 @@ app.controller 'GeneCtrl', ($scope, $sce, $routeParams, GeneService, LinkService
     return
 
   $scope.showBrowse = ()->
+    ifr = $document.find('iframe')
     $scope.browse = !$scope.browse
     $scope.subview = !$scope.subview
+    ifr.attr('src', ifr.attr('src'))
     return
     
 
